@@ -1,0 +1,33 @@
+{
+  "source": "Local FocusApp source tree, Contracts and Core API verified against integration document",
+  "auditedBaselineFromDocument": "23d4084152cdb9394501ca43e6bd91c535638fc1",
+  "commitOfLocalSourceIndependentlyVerified": false,
+  "files": [
+    {
+      "path": "Contracts/IpcOperations.cs",
+      "sha256": "e6503d764c537199af4b54b3cc721f1494638276351088d6fbd8815181a56bca"
+    },
+    {
+      "path": "Contracts/IpcProtocol.cs",
+      "sha256": "75295ba9f56f097754b3db39062fad2812538b08914e822a9bea8cb73619a65a"
+    },
+    {
+      "path": "Contracts/NamedPipeIpcClient.cs",
+      "sha256": "5b33db8c9c3b70270c54089022b79bb85049f3e051ad8c05d142ccf2a59ed311"
+    },
+    {
+      "path": "Core/AccessControlModels.cs",
+      "sha256": "346822716d90c5386af0a61c80d9c86b8374dc3b29e5df6189664ec590cd3fad"
+    },
+    {
+      "path": "Core/AccessControlService.cs",
+      "sha256": "3ae5b3567dc6426f017b047644c8bad446c3d9ddc7e4e0094efe823b208b0b57"
+    },
+    {
+      "path": "Core/FocusThemeMode.cs",
+      "sha256": "fa59914bda40cf60f3d9ec2cedc8f71e7b1418f974c9781722f4863951da3526",
+      "copiedAt": "2026-10-29",
+      "sourcePath": "src/FocusApp.Core/FocusThemeMode.cs"
+    }
+  ]
+}

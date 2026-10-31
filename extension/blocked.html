@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>此网站已被屏蔽 · 专注时光</title>
+  <link rel="stylesheet" href="blocked.css">
+</head>
+<body class="blocked-page">
+  <div class="page-scene" aria-hidden="true"></div>
+
+  <main class="blocked-content">
+    <div class="status-emblem" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="24"></circle>
+        <path d="m15 15 34 34"></path>
+      </svg>
+    </div>
+    <h1 id="headline" class="page-heading">
+      <span id="headline-main">正在确认</span><span id="headline-accent" class="heading-accent">屏蔽状态</span>
+    </h1>
+    <p id="subtitle" class="page-subtitle">正在与本机软件同步…</p>
+
+    <section class="site-panel" aria-label="网站信息与专注状态">
+      <div class="site-details">
+        <div class="site-icon-wrap">
+          <span id="fallback-icon" class="site-icon-fallback" aria-hidden="true">◎</span>
+          <img id="site-icon" class="site-icon" alt="网站图标" hidden>
+        </div>
+        <div class="site-identity">
+          <h2 id="site-name" class="site-name">网站</h2>
+          <p id="site-domain" class="site-domain"></p>
+        </div>
+        <span id="block-badge" class="block-badge" data-state="pending">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="m5.6 5.6 12.8 12.8"></path>
+          </svg>
+          <span id="block-status">待同步</span>
+        </span>
+      </div>
+
+      <div class="focus-row">
+        <div class="focus-status">
+          <svg class="clock-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="13.5"></circle>
+            <path d="M16 8v8l5.5 3.5"></path>
+          </svg>
+          <span id="focus-status">等待同步</span>
+        </div>
+        <div class="focus-time">
+          <span id="remaining" class="remaining-time" role="timer" aria-label="剩余专注时间" aria-describedby="timer-caption">--:--</span>
+        </div>
+      </div>
+    </section>
+
+    <p id="timer-caption" class="sr-only">剩余专注时间 · 估计值</p>
+    <p id="access-note" class="sr-only">正在确认此网站的访问状态。</p>
+    <p id="message" class="page-message" role="status">正在与本机 FocusApp 同步…</p>
+    <a id="return-site" class="return-site" hidden>重新访问网站<span aria-hidden="true"> →</span></a>
+  </main>
+  <script type="module" src="blocked.js"></script>
+</body>
+</html>

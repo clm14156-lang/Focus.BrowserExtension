@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "FocusApp 专注网站屏蔽",
+  "description": "与本机 FocusApp 同步，专注时将屏蔽网站导航到专注提示页。",
+  "version": "0.1.0",
+  "minimum_chrome_version": "120",
+  "background": { "service_worker": "service-worker.js", "type": "module" },
+  "action": { "default_popup": "popup.html", "default_title": "FocusApp 连接状态" },
+  "permissions": ["nativeMessaging", "declarativeNetRequest", "storage", "alarms", "favicon"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "web_accessible_resources": [{
+    "resources": ["blocked.html", "blocked.js", "blocked.css", "assets/white_background.png", "assets/dark_background.png"],
+    "matches": ["http://*/*", "https://*/*"]
+  }],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'; connect-src 'none'; img-src 'self' data:"
+  }
+}

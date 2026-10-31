@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+artifacts/
+.test-profiles/
+node_modules/
+*.user

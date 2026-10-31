@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FocusApp 连接状态</title><link rel="stylesheet" href="ui.css"></head>
+<body class="popup"><main>
+  <div class="brand"><span class="brand-mark">F</span> FocusApp</div>
+  <h1 id="connection">正在同步</h1>
+  <p id="summary" role="status">连接本机软件…</p>
+  <dl><dt>专注阶段</dt><dd id="focus">未知</dd><dt>剩余时间（估计）</dt><dd id="remaining">--</dd><dt>域名 / 插件规则</dt><dd id="rules">--</dd><dt>桌面保护</dt><dd id="desktop">--</dd><dt>快照 / 已应用序号</dt><dd id="sequence">--</dd></dl>
+  <p id="error" class="error"></p><button id="reconnect">重新连接 / 同步</button>
+  <p class="footnote">首次使用需另行安装 Native Host。仅覆盖新的 HTTP/HTTPS 顶层导航。</p>
+</main><script type="module" src="popup.js"></script></body></html>
